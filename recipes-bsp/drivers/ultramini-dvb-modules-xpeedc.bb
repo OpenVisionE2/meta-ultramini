@@ -1,8 +1,4 @@
-KV = "4.1.21"
 SRCDATE = "20170424"
-GCC = "6.3.0"
-
-SRC_URI = "http://source.mynonpublic.com/xtrend/${MACHINE_DRIVER}-drivers-${KV}-${GCC}-${SRCDATE}.zip"
 
 require ultramini-dvb-modules.inc
 

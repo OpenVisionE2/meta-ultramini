@@ -7,6 +7,11 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 PV = "${KV}+${SRCDATE}"
 
+KV = "4.1.21"
+GCC = "6.3.0"
+
+SRC_URI = "http://source.mynonpublic.com/xtrend/${MACHINE}-drivers-${KV}-${GCC}-${SRCDATE}.zip"
+
 S = "${WORKDIR}"
 
 INHIBIT_PACKAGE_STRIP = "1"
