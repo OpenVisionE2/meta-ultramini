@@ -6,6 +6,8 @@ require conf/license/license-close.inc
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
+COMPATIBLE_MACHINE = "^(et7000mini|xpeedc)$"
+
 SRC_URI = "http://source.mynonpublic.com/xtrend/xpeedc-dvbc-blindscan-${PV}.zip"
 
 PROVIDES += "virtual/blindscan-dvbc"

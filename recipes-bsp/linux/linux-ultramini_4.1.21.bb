@@ -3,7 +3,7 @@ SECTION = "kernel"
 LICENSE = "GPLv2"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-COMPATIBLE_MACHINE = "et7000mini|xpeedc"
+COMPATIBLE_MACHINE = "^(et7000mini|xpeedc)$"
 
 inherit kernel machine_kernel_pr
 
