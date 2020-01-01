@@ -22,13 +22,15 @@ RPROVIDES_kernel-image = "kernel-image-${KERNEL_VERSION}"
 
 SRC_URI += "http://source.mynonpublic.com/xtrend/linux-${PV}.tar.xz \
     file://defconfig \
-    file://kernel-add-support-for-gcc6.patch \
     file://0001-Support-TBS-USB-drivers-for-4.1-kernel.patch \
     file://0001-TBS-fixes-for-4.1-kernel.patch \
     file://0001-STV-Add-PLS-support.patch \
     file://0001-STV-Add-SNR-Signal-report-parameters.patch \
     file://blindscan2.patch \
     file://0001-stv090x-optimized-TS-sync-control.patch \
+    file://0002-log2-give-up-on-gcc-constant-optimizations.patch \
+    file://0003-makefile-disable-warnings.patch \
+    file://0004-cp1emu-do-not-use-bools-for-arithmetic.patch \
 "
 
 S = "${WORKDIR}/linux-${PV}"
