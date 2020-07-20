@@ -16,7 +16,7 @@ ROOTFS_FILE = "rootfs.bin"
 DVBPROVIDER = "kernel"
 DVBSKYPROVIDER = "kernel"
 
-MACHINE_EXTRA_RRECOMMENDS += " \
+MACHINE_EXTRA_RRECOMMENDS += "\
     gstreamer1.0-plugin-dvbmediasink \
     "
 
@@ -60,7 +60,7 @@ IMAGE_CMD_ubi_append = "\
     rm -Rf ${IMAGEDIR}; \
     "
 
-MACHINE_FEATURES += "alsa hdmicec switchoff videoenhancement blindscan-tbs"
+MACHINE_FEATURES += "alsa hdmicec switchoff videoenhancement blindscan-tbs HDMI RCA"
 
 # Broken bootloader can only flash around 100 MB
 FLASHSIZE = "96"
