@@ -1,6 +1,8 @@
 # We know about rtc
 MACHINE_FEATURES_BACKFILL_CONSIDERED += "rtc"
 
+KERNELVERSION = "4.1.21"
+
 BOX_BRAND = "ultramini"
 
 MTD_KERNEL = "mtd1"
@@ -8,7 +10,7 @@ MTD_ROOTFS = "mtd2"
 
 SOC_FAMILY = "bcm7362"
 
-PREFERRED_VERSION_linux-ultramini = "4.1.21"
+PREFERRED_VERSION_linux-ultramini = "${KERNELVERSION}"
 
 KERNEL_FILE = "kernel.bin"
 ROOTFS_FILE = "rootfs.bin"
@@ -17,9 +19,8 @@ DVBPROVIDER = "kernel"
 DVBSKYPROVIDER = "kernel"
 
 MACHINE_EXTRA_RRECOMMENDS += "\
-    gstreamer1.0-plugin-dvbmediasink \
-    "
-
+	gstreamer1.0-plugin-dvbmediasink \
+	"
 
 DVBMEDIASINK_CONFIG = "--with-wma --with-wmv --with-pcm --with-dtsdownmix"
 
