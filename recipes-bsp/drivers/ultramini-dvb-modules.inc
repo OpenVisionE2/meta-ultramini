@@ -7,7 +7,6 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 PV = "${KV}+${SRCDATE}"
 
-KV = "${KERNELVERSION}"
 GCC = "6.3.0"
 
 SRC_URI = "http://source.mynonpublic.com/xtrend/${MACHINE}-drivers-${KV}-${GCC}-${SRCDATE}.zip"
