@@ -14,8 +14,8 @@ PV = "1.5"
 S = "${WORKDIR}"
 
 do_install() {
-	install -d "${D}/${bindir}"
-	install -m 0755 "${S}/tda1002x" "${D}/${bindir}"
+	install -d "${D}${bindir}"
+	install -m 0755 "${S}/tda1002x" "${D}${bindir}"
 }
 
 SRC_URI[md5sum] = "28bcf3cd9de63144d7b0bbf9d5040e74"
