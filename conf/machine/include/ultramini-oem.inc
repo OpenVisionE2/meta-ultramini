@@ -18,7 +18,7 @@ ROOTFS_FILE = "rootfs.bin"
 DVBPROVIDER = "kernel"
 DVBSKYPROVIDER = "kernel"
 
-MACHINE_EXTRA_RRECOMMENDS += "\
+MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	gstreamer1.0-plugin-dvbmediasink \
 	"
 
