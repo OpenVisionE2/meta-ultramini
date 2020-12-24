@@ -4,6 +4,8 @@ PRIORITY = "optional"
 LICENSE = "CLOSED"
 require conf/license/license-close.inc
 
+COMPATIBLE_MACHINE = "^(xpeedc)$"
+
 SRC_URI = "http://source.mynonpublic.com/xtrend/xpeedc-dvbc-blindscan-${PV}.zip"
 
 PROVIDES += "virtual/blindscan-dvbc"
